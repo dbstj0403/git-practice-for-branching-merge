@@ -1,2 +1,2 @@
-console.log("hello world~~~");
-let hhhh = "hhh";
+console.log("hello world~~~!!!!!");
+let hhhh = "ㅋㅋㅋㅋ";
