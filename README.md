@@ -48,6 +48,12 @@
 
 ![Image](https://github.com/user-attachments/assets/72e037bb-b1ed-433c-954d-0a022f6cfa0c)
 
+**`rebase 중 충돌 해결`**
+
+- main 브랜치에서 타 브랜치로 checkout 한 뒤 작업하여 커밋을 남기고, 다시 main 브랜치로 돌아와 동일한 파일 작업을 진행한 뒤 rebase를 시도하면 충돌이 발생한다. 이를 병합 편집기에서 해결하고, 파일들을 스테이징한 후 커밋을 남기면 rebase가 완료된다.
+
+<img width="962" alt="Image" src="https://github.com/user-attachments/assets/c8303648-4798-4d4b-9559-646d78f3ee47" />
+
 **`squash`**
 
 - hyejeong2 브랜치에서 작업 후 두 개의 커밋을 남긴다. 이후 메인 브랜치로 squash merge를 하여 feat: squash merge hyejeong2 커밋만 남아 있는 것을 확인할 수 있다.
