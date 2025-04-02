@@ -44,7 +44,7 @@
 
 **`rebase`**
 
-- main에서 commit 작성된 후 yurim2 브랜치로 분기, 분기한 브랜치에서 커밋 작성 후 main 브랜치에 rebase하여 커밋 시점이 옮겨진 것을 확인할 수 있다.
+- yurim2 브랜치로 분기, main에서 commit 작성된 후, 분기한 브랜치에서 커밋 작성 후 main 브랜치에 rebase하여 커밋 시점이 옮겨진 것을 확인할 수 있다.
 - 유림
     ``` shell
     main> git checkout -b yourim2
@@ -66,5 +66,23 @@
 **`squash`**
 
 - hyejeong2 브랜치에서 작업 후 두 개의 커밋을 남긴다. 이후 메인 브랜치로 squash merge를 하여 feat: squash merge hyejeong2 커밋만 남아 있는 것을 확인할 수 있다.
+- 혜정
+    ``` shell
+    main> git checkout -b hyejeong2
+    ```
+- 유림: main에서 commit 생성
+    ``` shell
+    main> git commit -m "chore: squash-merge test"
+    ```
+- 혜정: hyejeong2에서 2 commit 생성 후, main으로 checkout한 후, squash & merge
+    ``` shell
+    hyejeong2> git commit -m "feat: squash.txt 생성"
+    hyejeong2> git commit -m "feat: squash.txt 수정"
+    hyejeong2> git push origin hyejeong2
+    hyejeong2> checkout main
+    main> git pull
+    main> git merge --squash hyejeong2
+    main> git commit -m "feat: squash merge hyejeong2"
+    ```
 
 ![Image](https://github.com/user-attachments/assets/26e1ae53-2256-4197-86a2-5facf2b6c944)
