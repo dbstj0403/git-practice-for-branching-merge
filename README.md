@@ -49,3 +49,7 @@
 ![Image](https://github.com/user-attachments/assets/72e037bb-b1ed-433c-954d-0a022f6cfa0c)
 
 **`squash`**
+
+- hyejeong2 브랜치에서 작업 후 두 개의 커밋을 남긴다. 이후 메인 브랜치로 squash merge를 하여 feat: squash merge hyejeong2 커밋만 남아 있는 것을 확인할 수 있다.
+
+![Image](https://github.com/user-attachments/assets/26e1ae53-2256-4197-86a2-5facf2b6c944)
