@@ -35,7 +35,7 @@
 
 <h3>🙊 4가지 머지 방식 실습해 보기!</h3>
 
-**`Fast-forward`**
+**`3-Way, Fast-forward`**
 
 - yunseo, hyejeong : 3-Way
 - yurim : fast-forward
