@@ -45,6 +45,21 @@
 **`rebase`**
 
 - main에서 commit 작성된 후 yurim2 브랜치로 분기, 분기한 브랜치에서 커밋 작성 후 main 브랜치에 rebase하여 커밋 시점이 옮겨진 것을 확인할 수 있다.
+- 유림
+    ``` shell
+    main> git checkout -b yourim2
+    ```
+- 윤서: main에서 rebase.txt 생성 후, commit & push
+    ``` shell
+    main> git commit -m "Chore: Create rebase.txt"
+    ```
+- 유림: yourim2에서 rebase2.txt 생성 후, commit & push, rebase, main에서 merge
+    ``` shell
+    yourim2> git commit -m "Chore: Create rebase2.txt"
+    yourim2> git rebase main
+    yourim2> git checkout main
+    main> git merge yourim2
+    ```
 
 ![Image](https://github.com/user-attachments/assets/72e037bb-b1ed-433c-954d-0a022f6cfa0c)
 
