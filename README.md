@@ -1,4 +1,4 @@
-**🐤 Todo**
+<h2>🐤 Todo</h2>
 
 - 팀별 branching/merge 가이드를 작성
 - 브랜치를 자유롭게 생성하고, 커밋을 한 후 push, pull
