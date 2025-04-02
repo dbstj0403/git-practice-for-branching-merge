@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-rebase test for main branch. isn't it?
-=======
-rebase test for rebase branch.!!!!!!!!
->>>>>>> 174287a1cf53b21d4e7b8f056ba2ca207b694f52
