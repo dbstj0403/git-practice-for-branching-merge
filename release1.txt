@@ -1,2 +1,2 @@
 release file
-release2
+release/0.2.0
