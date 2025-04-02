@@ -1,1 +1,2 @@
 rebase-test
+sqush-merge
