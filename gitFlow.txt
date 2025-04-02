@@ -1,8 +1,5 @@
 1. feature1
 2. feature1
-<<<<<<< HEAD
 3. feature2
-=======
 3. feature2
 4. feature2
->>>>>>> feature2
