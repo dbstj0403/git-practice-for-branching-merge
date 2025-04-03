@@ -1,2 +1,1 @@
-rebase-test
-sqush-merge
+pull-request
