@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# git-practice-with-team
-=======
 <h3>🐤 Todo</h3>
 
 - 팀별 branching/merge 가이드를 작성
@@ -50,20 +47,20 @@
 yurim2 브랜치로 분기, main에서 commit 작성된 후, 분기한 브랜치에서 커밋 작성 후 main 브랜치에 rebase하여 커밋 시점이 옮겨진 것을 확인할 수 있다.
 
 - 유림
-    ``` shell
-    main> git checkout -b yourim2
-    ```
+  ```shell
+  main> git checkout -b yourim2
+  ```
 - 윤서: main에서 rebase.txt 생성 후, commit & push
-    ``` shell
-    main> git commit -m "Chore: Create rebase.txt"
-    ```
+  ```shell
+  main> git commit -m "Chore: Create rebase.txt"
+  ```
 - 유림: yourim2에서 rebase2.txt 생성 후, commit & push, rebase, main에서 merge
-    ``` shell
-    yourim2> git commit -m "Chore: Create rebase2.txt"
-    yourim2> git rebase main
-    yourim2> git checkout main
-    main> git merge yourim2
-    ```
+  ```shell
+  yourim2> git commit -m "Chore: Create rebase2.txt"
+  yourim2> git rebase main
+  yourim2> git checkout main
+  main> git merge yourim2
+  ```
 
 ![Image](https://github.com/user-attachments/assets/72e037bb-b1ed-433c-954d-0a022f6cfa0c)
 
@@ -78,23 +75,22 @@ yurim2 브랜치로 분기, main에서 commit 작성된 후, 분기한 브랜치
 hyejeong2 브랜치에서 작업 후 두 개의 커밋을 남긴다. 이후 메인 브랜치로 squash merge를 하여 feat: squash merge hyejeong2 커밋만 남아 있는 것을 확인할 수 있다.
 
 - 혜정
-    ``` shell
-    main> git checkout -b hyejeong2
-    ```
+  ```shell
+  main> git checkout -b hyejeong2
+  ```
 - 유림: main에서 commit 생성
-    ``` shell
-    main> git commit -m "chore: squash-merge test"
-    ```
+  ```shell
+  main> git commit -m "chore: squash-merge test"
+  ```
 - 혜정: hyejeong2에서 2 commit 생성 후, main으로 checkout한 후, squash & merge
-    ``` shell
-    hyejeong2> git commit -m "feat: squash.txt 생성"
-    hyejeong2> git commit -m "feat: squash.txt 수정"
-    hyejeong2> git push origin hyejeong2
-    hyejeong2> git checkout main
-    main> git pull
-    main> git merge --squash hyejeong2
-    main> git commit -m "feat: squash merge hyejeong2"
-    ```
+  ```shell
+  hyejeong2> git commit -m "feat: squash.txt 생성"
+  hyejeong2> git commit -m "feat: squash.txt 수정"
+  hyejeong2> git push origin hyejeong2
+  hyejeong2> git checkout main
+  main> git pull
+  main> git merge --squash hyejeong2
+  main> git commit -m "feat: squash merge hyejeong2"
+  ```
 
 ![Image](https://github.com/user-attachments/assets/26e1ae53-2256-4197-86a2-5facf2b6c944)
->>>>>>> b616e8c736d2287836b265a003f2a0aa3b8516e1
